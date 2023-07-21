@@ -89,3 +89,6 @@ def update_count(request):
     else:
         return JsonResponse({'code': -1, 'errorMsg': 'action参数错误'},
                     json_dumps_params={'ensure_ascii': False})
+
+def test():
+    return JsonResponse({'code': 0, 'data': 'test'})
