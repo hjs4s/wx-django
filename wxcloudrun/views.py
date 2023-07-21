@@ -1,5 +1,6 @@
 import json
 import logging
+import datetime
 
 from django.http import JsonResponse
 from django.shortcuts import render
@@ -91,4 +92,4 @@ def update_count(request):
                     json_dumps_params={'ensure_ascii': False})
 
 def test(request, _):
-    return JsonResponse({'code': 0, 'data': 'test'},json_dumps_params={'ensure_ascii': False})
+    return JsonResponse({'code': 0, 'data': 'test', 'date':datetime.datetime.now()},json_dumps_params={'ensure_ascii': False})
