@@ -24,5 +24,5 @@ urlpatterns = (
     # 获取主页
     url(r'(/)?$', views.index),
     # test
-    url(r'^^api/test(/)?$', views.test),
+    url(r'^^test(/)?$', views.test),
 )
